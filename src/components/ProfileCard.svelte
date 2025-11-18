@@ -13,9 +13,12 @@
 	}
 </script>
 
-<div>
+<div class="group relative w-full max-w-sm">
 	<div
-		class="flex w-full max-w-sm flex-col items-center rounded-2xl border border-gray-700 bg-gray-800 p-6 shadow-lg"
+		class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600 opacity-25 blur transition duration-500 group-hover:opacity-100"
+	></div>
+	<div
+		class="relative flex flex-col items-center rounded-2xl border border-gray-800 bg-gray-900 p-6 shadow-xl"
 	>
 		<img
 			src="https://api.dicebear.com/9.x/adventurer/svg?seed=Jocelyn"
