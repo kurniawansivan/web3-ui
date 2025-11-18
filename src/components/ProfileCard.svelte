@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Copy, Check } from 'lucide-svelte';
+	import { fly } from 'svelte/transition';
 
 	let isCopied = false;
 	const address = '0x71C...9A21';
@@ -13,7 +14,7 @@
 	}
 </script>
 
-<div class="group relative w-full max-w-sm">
+<div in:fly={{ y: 50, duration: 3000 }} class="group relative w-full max-w-sm">
 	<div
 		class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600 opacity-25 blur transition duration-500 group-hover:opacity-100"
 	></div>
